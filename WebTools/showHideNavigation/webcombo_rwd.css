@@ -1,0 +1,65 @@
+html {
+	text-align: center;
+}
+body {
+	margin: 0px auto;
+	background-color:#eeeeee;
+}
+#page {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 100%;
+}
+ 
+#content {
+	position: relative;
+	width: 100%;
+	border:dotted 1px red;
+	
+}
+.menu_item {
+	display: none;
+}
+
+.standardContainer {
+	min-height: 250px;
+	min-width: 200px;
+	background-color: #ffffff;
+	border: solid 1px #CCCCCC;
+	margin-top: 20px;
+	max-width:75%;
+		margin-left:15%;
+}
+#navigation{
+	height:44px;
+	min-height:44px;
+	padding-top:4px;
+	background-color:#333333;
+}
+.navigationButton{
+	min-height:40px;
+	height:40px;
+}
+#map-canvas2 {
+	display:none;
+	min-height: 250px;
+	min-width: 200px;
+	margin-left:20%;
+	margin-right:20%;
+}
+/*------------------DESKTOP----------------*/
+@media screen and (max-width: 5000px) {
+	 
+
+}
+/*------------------TABLET----------------*/
+@media screen and (max-width: 1024px) {
+	 
+
+}
+/*------------------iPhone Landscape----------------*/
+@media screen and (max-width: 480px) {
+ 
+	
+}

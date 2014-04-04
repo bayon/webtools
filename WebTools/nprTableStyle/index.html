@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+	<head>
+		<!-- navGradientCombo -->
+		<meta charset="UTF-8">
+		<title>Centered Min HTML5 Doc</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<!-- -->
+		<link rel="stylesheet" type="text/css" href="css.css">
+		
+		<script src="js.js"></script>
+		<!-- <nprTable> -->
+		<script src="tableX.js"></script>
+		<script src="tableFormattedData.js"></script>
+		<link rel="stylesheet" type="text/css" href="tableX.css">
+		<!-- </nprTable> -->
+	</head>
+
+	<body >
+		<div id="page">
+			<div id="tablePrint"></div>
+		</div>
+	</body>
+</html>
+
+ 
+<script>
+	function TableFactory() {
+	}
+	TableFactory.prototype = new Factory();
+	TableFactory.prototype.Class = TableX;
+
+	var tableFactory = new TableFactory();
+	var myTable = tableFactory.createClass({
+		ClassType : "TableX",
+		tableData : myArray,
+		tableHeader : "one"
+	});
+	document.getElementById('tablePrint').innerHTML = myTable.tableHTML;
+
+</script>
+<script>
+// TABLE DELEGATE METHODS:
+function rowSelectedAtIndex(tr)
+{
+	var index = tr.rowIndex -1; // -1 because data array starts at 0 and table index at 1.
+	var personSelected = myArray[index];
+	alert(personSelected.name + ": "+ personSelected.id);
+	
+}
+</script>

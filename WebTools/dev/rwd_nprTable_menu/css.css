@@ -1,0 +1,119 @@
+html {
+	text-align: center;
+	border: solid 2px black;
+	width: 100%;
+}
+body {
+	margin: 0px auto;
+	border: solid 2px green;
+	width: 100%;
+}
+#page {
+
+	border: solid 1px red;
+	/* <rwd for='background image'> */
+	background-image: url('photo-320-480.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 480px;
+	overflow: hidden;
+	/* </rwd> */
+	 
+
+}
+
+
+
+#content {
+	 
+	width: 100%;
+	 
+	 
+	
+}
+.menu_item {
+	display: none;
+}
+
+.standardContainer {
+	min-height: 250px;
+	min-width: 200px;
+	background-color: #ffffff;
+	border: solid 1px #CCCCCC;
+	margin-top: 20px;
+	max-width:75%;
+		margin-left:15%;
+}
+#navigation{
+	height:44px;
+	min-height:44px;
+	padding-top:4px;
+	background-color:#333333;
+}
+.navigationButton{
+	min-height:40px;
+	height:40px;
+}
+/*------------------------------------------------------------*/
+/* <screen-sizes>
+ iPhone is 320×480,
+ iPhone 4 is 640×960
+ iPhone 5 is 640×1136
+ iPad 2 1024 x 768 pixels
+ </screen-sizes>
+ */
+/*------------------------------------------------------------*/
+@media screen and (max-width: 5000px) {
+	#page {
+		/* <rwd for='background image'> */
+		background-image: url('photo-1024-768.jpg');
+		min-height: 768px;
+		/* </rwd> */
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	#page {
+		/* <rwd for='background image'> */
+		background-image: url('photo-1024-768.jpg');
+		min-height: 768px;
+		/* </rwd> */
+	}
+}
+@media screen and (max-width: 960px) {
+}
+@media screen and (max-width: 768px) {
+	#page {
+		/* <rwd for='background image'> */
+		background-image: url('photo-768-1024.jpg');
+		min-height: 960px;
+		/* </rwd> */
+	}
+}
+@media screen and (max-width: 640px) {
+	
+	#page {
+		/* <rwd for='background image'> */
+		background-image: url('photo-640-960.jpg');
+		min-height: 960px;
+		/* </rwd> */
+	}
+}
+@media screen and (max-width: 480px) {
+	
+	#page {
+		/* <rwd for='background image'> */
+		background-image: url('photo-480-600.jpg');
+		min-height: 600px;
+		/* </rwd> */
+	}
+}
+@media screen and (max-width: 320px) {
+	#page {
+		/* <rwd for='background image'> */
+		background-image: url('photo-320-480.jpg');
+		min-height: 480px;
+		/* </rwd> */
+	}
+	
+}
