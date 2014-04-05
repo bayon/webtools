@@ -1,0 +1,13 @@
+#navigation{
+	height:44px;
+	min-height:44px;
+	padding-top:4px;
+	background-color:#333333;
+}
+.navigationButton{
+	min-height:40px;
+	height:40px;
+}
+.menu_item {
+	display: none;
+}

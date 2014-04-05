@@ -4,11 +4,17 @@
 <div class='standardContainer'>
 	<p><?= $_POST['controller']; ?></p>
 	<p><?= $_POST['method']; ?></p>
-	<a href="tel:+15023773546">Call us free!</a>
 	<div>
-		Your Telephone: <input type="tel" name="usrtel">
+		<a href="tel:+15023773546">Call us free!</a>
 	</div>
-	<div>
+	
+	
+	
+</div>
+
+<?php
+/* //   HTML5  Input Types ---------------------------------
+ * <div>
 		Select a time: <input type="time" name="usr_time">
 	</div>
 	<div>
@@ -17,4 +23,8 @@
 	<div>
 		(?)Birthday (date and time): <input type="datetime" name="bdaytime">
 	</div>
-</div>
+ * <div>
+		Your Telephone: <input type="tel" name="usrtel">
+	</div>
+ */
+?>

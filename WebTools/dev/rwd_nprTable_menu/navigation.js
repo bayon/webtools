@@ -8,7 +8,7 @@ function hideAllMenus() {
 	document.getElementById("menu2").style.display = "none";
 	document.getElementById("menu3").style.display = "none";
 	document.getElementById("tablePrint").style.display = "none";
-	 document.getElementById("map-canvas2").style.display = "none";
+	document.getElementById("map-canvas2").style.display = "none";
 }
 
 function menu1() {
