@@ -36,13 +36,14 @@ body {
 }
 
 .standardContainer {
-	min-height: 250px;
+	min-height: 100px;
 	min-width: 200px;
+	
 	background-color: #ffffff;
 	border: solid 1px #CCCCCC;
 	margin-top: 20px;
 	max-width:75%;
-		margin-left:15%;
+	margin-left:15%;
 }
 #navigation{
 	height:44px;
@@ -53,6 +54,13 @@ body {
 .navigationButton{
 	min-height:40px;
 	height:40px;
+}
+#map-canvas2 {
+	display:none;
+	min-height: 250px;
+	min-width: 200px;
+	margin-left:20%;
+	margin-right:20%;
 }
 /*------------------------------------------------------------*/
 /* <screen-sizes>

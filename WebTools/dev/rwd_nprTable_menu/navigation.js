@@ -8,7 +8,7 @@ function hideAllMenus() {
 	document.getElementById("menu2").style.display = "none";
 	document.getElementById("menu3").style.display = "none";
 	document.getElementById("tablePrint").style.display = "none";
-	 
+	 document.getElementById("map-canvas2").style.display = "none";
 }
 
 function menu1() {
@@ -27,7 +27,7 @@ function menu2() {
 function menu3() {
 	hideAllMenus();
 	document.getElementById("menu3").style.display = "block";
-	
+	document.getElementById("map-canvas2").style.display = "block";
 	postAjaxForm('controller=menu3Controller&method=returnSomeData', 'page3.php', 'menu3');
 }
 
