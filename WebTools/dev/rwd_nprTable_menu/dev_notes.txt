@@ -1,0 +1,4 @@
+
+ table scroll up awkward, want to stop when none left
+ 
+navigation in the body might help layout overall.

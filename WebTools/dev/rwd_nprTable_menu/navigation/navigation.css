@@ -1,8 +1,9 @@
 #navigation{
-	height:44px;
+	height:54px;
 	min-height:44px;
-	padding-top:4px;
-	background-color:#333333;
+	padding-top:14px;
+	background-color:#000000;
+	
 }
 .navigationButton{
 	min-height:40px;

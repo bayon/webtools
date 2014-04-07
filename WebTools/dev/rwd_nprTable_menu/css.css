@@ -1,24 +1,18 @@
 html {
 	text-align: center;
-	border: solid 2px black;
 	width: 100%;
 }
 body {
 	margin: 0px auto;
-	border: solid 2px green;
 	width: 100%;
+	background-color: #000000;
 }
 #page {
-
-	border: solid 1px red;
-	/* <rwd for='background image'> */
-	background-image: url('photo-320-480.jpg');
+	background-image: url('images/photo-320-480.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	min-height: 480px;
 	overflow: hidden;
-	/* </rwd> */
-
 }
 
 #content { 
@@ -28,7 +22,6 @@ body {
 .standardContainer {
 	min-height: 100px;
 	min-width: 200px;
-	
 	background-color: #ffffff;
 	border: solid 1px #CCCCCC;
 	margin-top: 20px;

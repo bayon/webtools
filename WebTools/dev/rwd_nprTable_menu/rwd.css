@@ -1,4 +1,3 @@
-
 /*------------------------------------------------------------*/
 /* <screen-sizes>
  iPhone is 320×480,
@@ -10,55 +9,48 @@
 /*------------------------------------------------------------*/
 @media screen and (max-width: 5000px) {
 	#page {
-		/* <rwd for='background image'> */
-		background-image: url('photo-1024-768.jpg');
+		background-image: url('images/photo-1024-768.jpg');
 		min-height: 768px;
-		/* </rwd> */
 	}
+	
 }
 
 @media screen and (max-width: 1024px) {
 	#page {
-		/* <rwd for='background image'> */
-		background-image: url('photo-1024-768.jpg');
+		background-image: url('images/photo-1024-768.jpg');
 		min-height: 768px;
-		/* </rwd> */
 	}
+	
 }
 @media screen and (max-width: 960px) {
 }
 @media screen and (max-width: 768px) {
 	#page {
-		/* <rwd for='background image'> */
-		background-image: url('photo-768-1024.jpg');
+		background-image: url('images/photo-768-1024.jpg');
 		min-height: 960px;
-		/* </rwd> */
 	}
+	
 }
 @media screen and (max-width: 640px) {
-	
+
 	#page {
-		/* <rwd for='background image'> */
-		background-image: url('photo-640-960.jpg');
+		background-image: url('images/photo-640-960.jpg');
 		min-height: 960px;
-		/* </rwd> */
 	}
+	
 }
 @media screen and (max-width: 480px) {
-	
+
 	#page {
-		/* <rwd for='background image'> */
-		background-image: url('photo-480-600.jpg');
+		background-image: url('images/photo-480-600.jpg');
 		min-height: 600px;
-		/* </rwd> */
 	}
+	
 }
 @media screen and (max-width: 320px) {
 	#page {
-		/* <rwd for='background image'> */
-		background-image: url('photo-320-480.jpg');
+		background-image: url('images/photo-320-480.jpg');
 		min-height: 480px;
-		/* </rwd> */
 	}
-	
+
 }

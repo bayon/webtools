@@ -72,7 +72,11 @@ TableRow.prototype.createRow = function(data) {
 
 		cellContent += tableData.createCell(display);
 		cellContent += "</tr>";
+		
+		
 	}
+	//add filler row for scrolling user friendliness.
+	cellContent +="<tr class='tableXFillerRow'><td></td></tr>";
 	cellContent += "</div>";
 	return cellContent;
 }

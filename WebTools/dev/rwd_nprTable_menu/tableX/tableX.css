@@ -1,12 +1,14 @@
  
-#tablePrint{
+#tableXContainer{
 /*scrollable code in container*/
-	height:320px;
+	height:480px;
 	overflow:auto;
+	max-width:90%;
+	margin-left:5%;
+	
 }
 .tableX {
-	width: 100%;
-	 
+	width:100%; 
 }
 .tableX th{
 	background-color:#444444;
@@ -40,8 +42,22 @@
  	padding:10px;
 }
 .scrollingTableCellContent{
-	height:90px;
-	
+	height:95px;
+	float:left;
 	overflow:hidden;
 }
+ 
+.tableXFillerRow{
+	height:680px;
+	min-height:680px;
+	background-color:transparent;
+}
 
+.tableX h1, h2, h3{
+	font-family:Arial;
+}
+.tableX p{
+	font-family:Arial;
+	font-size:13px;
+	
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+	<head>
+
+	</head>
+	<style>
+		#slideout {
+			background-color:red;
+			position: fixed;
+			top: 40px;
+			left: 0;
+			-webkit-transition-duration: 0.3s;
+			-moz-transition-duration: 0.3s;
+			-o-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+		}
+		#slideout_inner {
+			background-color:green;
+			position: fixed;
+			top: 40px;
+			left: -250px;
+			-webkit-transition-duration: 0.3s;
+			-moz-transition-duration: 0.3s;
+			-o-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+		}
+		#slideout:hover {
+			left: 250px;
+		}
+		#slideout:hover #slideout_inner {
+			left: 0;
+		}
+	</style>
+	<body>
+		<div id="slideout">
+			<img src="feedback.png" alt="Feedback" />
+			<div id="slideout_inner">
+				<!--[form code goes here] -->
+			</div>
+		</div>
+	</body>
+</html>
