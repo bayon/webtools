@@ -1,0 +1,68 @@
+<!-- TRANSLATE -->
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div
+{
+width:100px;
+height:75px;
+background-color:red;
+border:1px solid black;
+}
+div#div2
+{
+-ms-transform:translate(50px,100px); /* IE 9 */
+-webkit-transform:translate(50px,100px); /* Chrome, Safari, Opera */
+transform:translate(50px,100px); /* Standard syntax */
+}
+</style>
+</head>
+<body>
+
+<div>Hello. This is a DIV element.</div>
+
+<div id="div2">Hello. This is a DIV element.</div>
+
+</body>
+</html>
+
+
+
+ 
+
+
+
+<!-- ROTATE -->
+
+div
+{
+-ms-transform: rotate(30deg); /* IE 9 */
+-webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+transform: rotate(30deg);
+}
+
+<!-- SCALE -->
+
+div
+{
+-ms-transform: scale(2,4); /* IE 9 */
+-webkit-transform: scale(2,4); /* Chrome, Safari, Opera */
+transform: scale(2,4);
+}
+<!-- SKEW -->
+
+div
+{
+-ms-transform: skew(30deg,20deg); /* IE 9 */
+-webkit-transform: skew(30deg,20deg); /* Chrome, Safari, Opera */
+transform: skew(30deg,20deg);
+}
+<!-- MATRIX -->
+div
+{
+-ms-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* IE 9 */
+-webkit-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* Chrome, Safari, Opera */
+transform:matrix(0.866,0.5,-0.5,0.866,0,0);
+}
+
