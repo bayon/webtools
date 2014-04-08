@@ -23,10 +23,9 @@
 		<link rel="stylesheet" type="text/css" href="geocode/geocode.css">
 		<!-- </geocode>-->
 
-		<!-- <slideInMenu>-->
-		<script src="slideInMenu/slideInMenu.js"></script>
-		<link rel="stylesheet" type="text/css" href="slideInMenu/slideInMenu.css">
-		<!-- </slideInMenu> -->
+		<!-- <slidingMenu> -->
+		<link rel="stylesheet" type="text/css" href="slidingMenu/slidingMenu.css">
+		<!-- </slidingMenu> -->
 
 		<!-- <rwd> -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,40 +34,18 @@
 		<!-- </rwd> -->
 
 	</head>
-	<style>
-		#slideInMenu {
-			width: 200px;
-			height: 480px;
-			background: #cccccc;
-			position: relative;
-			top: -480px;
-			animation: mymove 1s;/*infinite*/
-			-webkit-animation: mymove 1s; /*Safari and Chrome  infinite*/
-			animation-play-state: paused;
-			-webkit-animation-play-state: paused; /* Safari and Chrome */
-		}
 
-		@keyframes mymove
-		{
-		from {
-			left: -200px;
-		}
-		to {
-			left: 0px;
-		}
-		}
-
-		@-webkit-keyframes
-		mymove/*Safari and Chrome*/ {from {
-			left: -200px;
-		}
-		to {
-			left: 0px;
-		}
-		}
-	</style>
 	<body>
 		<div id="page">
+			<!-- <slidingMenu> -->
+			<div id="slideout">
+				
+				<img id="slideImage" src="feedback.png" alt="Feedback" />
+				<div id="slideout_inner">
+					<!--[form code goes here] -->
+				</div>
+			</div>
+			<!-- </slidingMenu> -->
 			<!-- <navigation> -->
 			<div id="navigation">
 				<button class="navigationButton" type="button" onclick="menu1()">
@@ -101,13 +78,6 @@
 
 			</div>
 			<!--</navigation>-->
-
-			<!-- <slideInMenu>-->
-			<div id="slideInMenu">
-
-			</div>
-
-			<!-- </slideInMenu> -->
 
 		</div>
 	</body>
@@ -158,5 +128,4 @@
 
 	google.maps.event.addDomListener(window, 'load', initialize); 
 </script>
-
 

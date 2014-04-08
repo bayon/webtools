@@ -1,4 +1,2 @@
-
- table scroll up awkward, want to stop when none left
+ getting the sliding menu to disengage in iPhone is awkward
  
-navigation in the body might help layout overall.

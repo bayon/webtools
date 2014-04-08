@@ -7,13 +7,8 @@
 	<div>
 		<a href="tel:+15023773546">Call us free!</a>
 	</div>
-	
-	<button onclick="slideIn()" >SlideIn</button>
-	<button onclick="slideOut()" >SlideOut</button>
-	
 </div>
-<script>
-</script>
+
 
 <?php
 /* //   HTML5  Input Types ---------------------------------
