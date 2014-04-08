@@ -7,6 +7,8 @@
 	<style>
 		#slideout {
 			background-color:red;
+			height:40px;
+			width:60px;
 			position: fixed;
 			top: 40px;
 			left: 0;
@@ -17,6 +19,8 @@
 		}
 		#slideout_inner {
 			background-color:green;
+			height:350px;
+			width:250px;
 			position: fixed;
 			top: 40px;
 			left: -250px;
@@ -31,10 +35,14 @@
 		#slideout:hover #slideout_inner {
 			left: 0;
 		}
+		#slideImage{
+			height:40px;
+			width:60px;
+		}
 	</style>
 	<body>
 		<div id="slideout">
-			<img src="feedback.png" alt="Feedback" />
+			<img id="slideImage" src="feedback.png" alt="Feedback" />
 			<div id="slideout_inner">
 				<!--[form code goes here] -->
 			</div>
