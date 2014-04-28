@@ -1,0 +1,21 @@
+CACHE MANIFEST
+# 2014-04-08 v1.0.1
+ 
+
+/images/photo-1024-768.jpg
+/images/photo-320-480.jpg
+/images/photo-480-600.jpg
+/images/photo-640-960.jpg
+/images/photo-768-1024.jpg
+
+/tableX/tableX.css
+/tableX/tableX.js
+
+
+
+
+NETWORK:
+
+
+FALLBACK:
+/html/ /offline.html
