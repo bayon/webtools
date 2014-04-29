@@ -40,6 +40,7 @@
  	height:100px;
  	overflow:hidden;
  	padding:10px;
+ 	box-shadow: 2px 2px 2px #111111;
 }
 .scrollingTableCellContent{
 	height:95px;
