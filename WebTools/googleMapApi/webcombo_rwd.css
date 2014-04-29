@@ -50,7 +50,9 @@ body {
 #map-canvas2 {
 	display:none;
 	min-height: 250px;
-	min-width: 200px;
+	min-width: 250px;
+	width:300px;
+	height:300px;
 	margin-left:20%;
 	margin-right:20%;
 }

@@ -9,7 +9,11 @@
 </div>
  
 <div>
+	<!-- You can call the function from here, but the listening function has to be on the index.html to be heard.-->
 	<input type="button" onclick="codeAddress('addressElementId')" id="inputButtonGeocode" style="width:150px" title="Click to Geocode" value="Click to Geocode" />
 </div>
+
+
+
+
 </div>
-	

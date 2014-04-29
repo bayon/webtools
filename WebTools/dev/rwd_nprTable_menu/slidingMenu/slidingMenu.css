@@ -1,4 +1,5 @@
 #slideout {
+	z-index:99999;
 	background-color: #444444;
 	height: 40px;
 	width: 50px;
