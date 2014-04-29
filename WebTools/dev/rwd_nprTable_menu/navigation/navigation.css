@@ -2,7 +2,8 @@
 	height:54px;
 	min-height:44px;
 	padding-top:14px;
-	background-color:#000000;
+	/*background-color:#000000;*/
+	background-image: url('../images/transparentBlack75percent.png');
 	
 }
 .navigationButton{

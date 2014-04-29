@@ -1,11 +1,14 @@
 #slideout {
 	z-index:99999;
 	
+	/*
 	background-image: url('../images/transparentWhite10x10.png');
+	*/
+	background-image: url('../images/transparentBlack75percent.png');
 	height: 40px;
 	width: 50px;
 	position: fixed;
-	top: 70px;
+	top: 72px;
 	left: 0;
 	-webkit-transition-duration: 0.3s;
 	-moz-transition-duration: 0.3s;
@@ -16,11 +19,10 @@
 	box-shadow: 1px 1px 1px #111111;
 }
 #slideout_inner {
-	/*background-color: #ddd;
-	border:solid 1px black;
-	transparentWhite10x10
-	* */
+	/*
 	background-image: url('../images/transparentWhite10x10.png');
+	*/
+	background-image: url('../images/transparentBlack75percent.png');
 	height: 480px;
 	width: 300px;
 	position: fixed;
