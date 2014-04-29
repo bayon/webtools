@@ -37,7 +37,7 @@
 
 	</head>
 
-	<body>
+	<body onload ="initPage()">
 		<div id="page">
 			<!-- <slidingMenu> -->
 			<div id="slideout">
@@ -45,36 +45,41 @@
 				<img id="slideImage" src="images/Go.png" alt="Go" />
 				<div id="slideout_inner">
 					<!--[form code goes here] -->
-					<h3>Call</h3>
-					<div>
-						<a href="tel:+15023773546">(502)377-3546</a>
+
+					<div class='standardContainer' onload="codeAddress('addressElementId')">
+
+						<h3>Call</h3>
+						<div>
+							<a href="tel:+15023773546">(502)377-3546</a>
+						</div>
+
 					</div>
+
 				</div>
 			</div>
 			<!-- </slidingMenu> -->
 			<!-- <navigation> -->
 			<div id="navigation">
 				<button class="navigationButton" type="button" onclick="menu1()">
-					Menu 1
+					Who
 				</button>
 				<button  class="navigationButton" type="button" onclick="menu2()">
-					Menu 2
+					What
 				</button>
 				<button  class="navigationButton" type="button" onclick="menu3()">
-					Menu 3
+					Where
 				</button>
 
 			</div>
 
 			<div id="content">
 				<div id="menu1" class="menu_item">
-					menu 1
 				</div>
+				
 				<div id="menu2"  class="menu_item">
-					menu 2
 				</div>
+				
 				<div id="menu3"  class="menu_item">
-					menu 3
 				</div>
 
 				<!-- AUXILIARY VIEWS -->
@@ -89,6 +94,13 @@
 		</div>
 	</body>
 </html>
+
+<script>
+	function initPage() {
+		hideAllMenus();
+		//codeAddress(addressElementId);
+	}
+</script>
 
 <script>
 	// <tableX>
@@ -141,14 +153,14 @@
 	 * Will NOT work when called from an included js file? why?
 	 */
 	function codeAddress(addressElementId) {
-		alert('something from geocodeX js');
+		//alert('something from geocodeX js');
 		var sAddress = document.getElementById(addressElementId).value;
 		geocoder.geocode({
 			'address' : sAddress
 		}, function(results, status) {
 
 			if (status == google.maps.GeocoderStatus.OK) {
-				alert(results[0].geometry.location);
+				//alert(results[0].geometry.location);
 
 				map2.setCenter(results[0].geometry.location);
 				var marker = new google.maps.Marker({

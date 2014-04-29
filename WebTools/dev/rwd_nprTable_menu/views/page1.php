@@ -2,11 +2,13 @@
  
 ?>
 <div class='standardContainer'>
+	<?php /*
 	<p><?= $_POST['controller']; ?></p>
 	<p><?= $_POST['method']; ?></p>
-	<div>
-		<a href="tel:+15023773546">Call us free!</a>
-	</div>
+	 */ ?>
+	 <h3>Uncle John's Farm</h3>
+	 <p>Where the whole family can get back to down home.</p>
+	
 </div>
 
 

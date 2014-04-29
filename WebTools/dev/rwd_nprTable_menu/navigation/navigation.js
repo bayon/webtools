@@ -28,6 +28,7 @@ function menu3() {
 	hideAllMenus();
 	document.getElementById("menu3").style.display = "block";
 	document.getElementById("map-canvas2").style.display = "block";
+	codeAddress('addressElementId');
 	postAjaxForm('controller=menu3Controller&method=returnSomeData', './views/page3.php', 'menu3');
 }
 

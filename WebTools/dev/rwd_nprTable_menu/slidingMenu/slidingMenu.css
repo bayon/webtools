@@ -1,6 +1,7 @@
 #slideout {
 	z-index:99999;
-	background-color: #ddd;
+	
+	background-image: url('../images/transparentWhite10x10.png');
 	height: 40px;
 	width: 50px;
 	position: fixed;
@@ -10,11 +11,15 @@
 	-moz-transition-duration: 0.3s;
 	-o-transition-duration: 0.3s;
 	transition-duration: 0.3s;
-	opacity:0.75;
-	filter:alpha(opacity=75);
+	opacity:1.0;
+	filter:alpha(opacity=100);
 }
 #slideout_inner {
-	background-color: #ddd;
+	/*background-color: #ddd;
+	border:solid 1px black;
+	transparentWhite10x10
+	* */
+	background-image: url('../images/transparentWhite10x10.png');
 	height: 480px;
 	width: 300px;
 	position: fixed;
