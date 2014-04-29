@@ -42,10 +42,13 @@
 			<!-- <slidingMenu> -->
 			<div id="slideout">
 
-				<img id="slideImage" src="feedback.png" alt="Feedback" />
+				<img id="slideImage" src="images/Go.png" alt="Go" />
 				<div id="slideout_inner">
 					<!--[form code goes here] -->
-
+					<h3>Call</h3>
+					<div>
+						<a href="tel:+15023773546">(502)377-3546</a>
+					</div>
 				</div>
 			</div>
 			<!-- </slidingMenu> -->
@@ -133,32 +136,30 @@
 	google.maps.event.addDomListener(window, 'load', initialize); 
 </script>
 
- 
-		
 <script>
-/*
- * Will NOT work when called from an included js file? why?
- */
+	/*
+	 * Will NOT work when called from an included js file? why?
+	 */
 	function codeAddress(addressElementId) {
-	alert('something from geocodeX js');
-	var sAddress = document.getElementById(addressElementId).value;
-	geocoder.geocode({
-		'address' : sAddress
-	}, function(results, status) {
+		alert('something from geocodeX js');
+		var sAddress = document.getElementById(addressElementId).value;
+		geocoder.geocode({
+			'address' : sAddress
+		}, function(results, status) {
 
-		if (status == google.maps.GeocoderStatus.OK) {
-			alert(results[0].geometry.location);
+			if (status == google.maps.GeocoderStatus.OK) {
+				alert(results[0].geometry.location);
 
-			map2.setCenter(results[0].geometry.location);
-			var marker = new google.maps.Marker({
-				map : map2,
-				position : results[0].geometry.location
-			});
+				map2.setCenter(results[0].geometry.location);
+				var marker = new google.maps.Marker({
+					map : map2,
+					position : results[0].geometry.location
+				});
 
-		} else {
-			alert("Geocode was not successful for the following reason: " + status);
-		}
-	});
-}
+			} else {
+				alert("Geocode was not successful for the following reason: " + status);
+			}
+		});
+	}
 
 </script>
