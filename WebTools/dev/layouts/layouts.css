@@ -1,9 +1,29 @@
+html {
+	text-align: center;
+	width: 100%;
+}
+body {
+	margin: 0px auto;
+	width: 100%;
+	background-color: #ffffff;
+}
+#page {
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+	float: left;
+}
 #section_main {
-	width: 50%;
+	background: #333333;
+	height: 100px;
+	width: 100px;
 	float: left;
 }
 #section_sub1 {
-	width: 50%;
+	background: #cccccc;
+	height: 100px;
+	width: 100px;
 	float: left;
 }
 
@@ -18,58 +38,63 @@
 /*------------------------------------------------------------*/
 @media screen and (max-width: 5000px) {
 	#page {
-		background-image: url('images/photo-1024-768.jpg');
-		min-height: 768px;
 	}
+	#section_main {
+		height: 480px;
+		width: 50%;
+	}
+	#section_sub1 {
+		height: 480px;
+		width: 50%;
+	}
+	
 }
-
 @media screen and (max-width: 1024px) {
 	#page {
-		background-image: url('images/photo-1024-768.jpg');
 		min-height: 768px;
 	}
 }
 @media screen and (max-width: 960px) {
+	#page {
+		min-height: 960px;
+	}
 }
 @media screen and (max-width: 768px) {
 	#page {
-		background-image: url('images/photo-768-1024.jpg');
 		min-height: 960px;
 	}
 }
 @media screen and (max-width: 640px) {
-
 	#page {
-		background-image: url('images/photo-640-960.jpg');
-		min-height: 960px;
+		background-color: green;
 	}
+	
 }
 @media screen and (max-width: 480px) {
-
 	#page {
-		background-image: url('images/photo-480-600.jpg');
-		min-height: 600px;
+		background-color: blue;
 	}
 	#section_main {
+		height: 320px;
 		width: 100%;
-		float: left;
 	}
 	#section_sub1 {
+		height: 320px;
 		width: 100%;
-		float: left;
 	}
+	
 }
 @media screen and (max-width: 320px) {
 	#page {
-		background-image: url('images/photo-320-480.jpg');
-		min-height: 480px;
+		background-color: red;
 	}
 	#section_main {
+		height: 480px;
 		width: 100%;
-		float: left;
 	}
 	#section_sub1 {
+		height: 480px;
 		width: 100%;
-		float: left;
 	}
+	
 }

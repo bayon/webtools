@@ -39,66 +39,80 @@
 
 	<body onload ="initPage()">
 		<div id="page">
-			<!-- <slidingMenu> -->
-			<div id="slideout">
+			<div id ="section_main">
+				<!-- <slidingMenu> -->
+				<div id="slideout">
+					<input type="button" onclick="slidingMenuHandler()" value="x"/>
+					<!--<img id="slideImage" src="images/contact.png" alt="contact" />-->
+					<div id="slideout_inner">
+						<!--[form code goes here] -->
 
-				<img id="slideImage" src="images/contact.png" alt="contact" />
-				<div id="slideout_inner">
-					<!--[form code goes here] -->
+						<div class='standardContainer' onload="codeAddress('addressElementId')">
 
-					<div class='standardContainer' onload="codeAddress('addressElementId')">
-
-						<p>Call us:</p>
-						<div>
-							<a href="tel:+15023773546">(502)377-3546</a>
+							<p>
+								Call use:
+							</p>
+							<div>
+								<a href="tel:+15023773546">(502)377-3546</a>
+							</div>
+							<p>
+								Email:
+							</p>
+							<div>
+								<a href="mailto:bayon@forteworks.com" target="_top">E-Mail</a>
+							</div>
+							<!--<input type="button" onclick="closeSlider()" value="x" /> -->
 						</div>
-						<p>Email:</p>
-						<div>
-							<a href="mailto:bayon@forteworks.com" target="_top">E-Mail</a>
-						</div>
-						
+
 					</div>
+				</div>
+				<!-- </slidingMenu> -->
+				<!-- <navigation> -->
+				<div id="navigation">
+					<button class="navigationButton" type="button" onclick="menu1()">
+						Who
+					</button>
+					<button  class="navigationButton" type="button" onclick="menu2()">
+						What
+					</button>
+					<button  class="navigationButton" type="button" onclick="menu3()">
+						Where
+					</button>
 
 				</div>
+
+				<div id="content">
+					<div id="menu1" class="menu_item"></div>
+
+					<div id="menu2"  class="menu_item"></div>
+
+					<div id="menu3"  class="menu_item"></div>
+
+					<!-- AUXILIARY VIEWS -->
+					<!-- <table> -->
+					<div id="tableXContainer" ></div>
+					<!-- <geocode> -->
+					<div id="map-canvas2" ></div>
+
+				</div>
+				<!--</navigation>-->
 			</div>
-			<!-- </slidingMenu> -->
-			<!-- <navigation> -->
-			<div id="navigation">
-				<button class="navigationButton" type="button" onclick="menu1()">
-					Who
-				</button>
-				<button  class="navigationButton" type="button" onclick="menu2()">
-					What
-				</button>
-				<button  class="navigationButton" type="button" onclick="menu3()">
-					Where
-				</button>
-
-			</div>
-
-			<div id="content">
-				<div id="menu1" class="menu_item">
-				</div>
-				
-				<div id="menu2"  class="menu_item">
-				</div>
-				
-				<div id="menu3"  class="menu_item">
-				</div>
-
-				<!-- AUXILIARY VIEWS -->
-				<!-- <table> -->
-				<div id="tableXContainer" ></div>
-				<!-- <geocode> -->
-				<div id="map-canvas2" ></div>
-
-			</div>
-			<!--</navigation>-->
-
 		</div>
 	</body>
 </html>
-
+<script>
+	// global javascript vars
+	var sliderNeedsToOpen = false; 
+</script>
+<script>
+	function closeSlider() {
+		//alert("close slider.");
+		/* note: works the first time BUT disables the sliding functionality.
+		 document.getElementById("slideout").style.left = "0px";
+		 document.getElementById("slideout_inner").style.left = "-300px";
+		 */
+	}
+</script>
 <script>
 	function initPage() {
 		hideAllMenus();
@@ -179,3 +193,28 @@
 	}
 
 </script>
+<script>
+	function slidingMenuHandler() {
+		/*
+		 if(sliderNeedsToOpen){
+		 sliderNeedsToOpen = false;
+		 document.getElementById("slideout").style.left = "0px";
+		 document.getElementById("slideout_inner").style.left = "-300px";
+		 }else{
+		 sliderNeedsToOpen = true;
+		 document.getElementById("slideout").style.left = "270px";
+		 document.getElementById("slideout_inner").style.left = "0px";
+		 }
+		 test();
+		 */
+	}
+</script>
+
+<script>
+	function test() {
+		alert("Test Function");
+		alert(sliderIsOpen);
+
+	}
+</script>
+

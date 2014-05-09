@@ -1,0 +1,24 @@
+HTML5:
+
+data-aka
+
+meter
+
+progressBar
+--------------------------------
+Microdata
+	-vocabularies schema.org
+-Google only ones using it now.(enhance indexing in search engine)
+www.google.com/webmasterstools/richsnippets/
+- a tool for testing how google search would react to your microdata
+------------------------------
+Document Oultine - Outline Algorithm
+developer.mozilla.org/en/Sections_and_Outlines_of_an_HTML5_document
+
+code.google.com/p/h5o/
+gsnedders.html5.org/outliner/
+
+ <section> and <hgroup>
+ bookmarklet
+ ----------------------------------
+ 
